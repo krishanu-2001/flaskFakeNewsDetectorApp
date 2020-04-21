@@ -1,0 +1,16 @@
+body{
+    margin: 1000;
+    font-family: sans-serif;
+    font-color: yellow;
+    background: ;
+}
+td,th{
+    width:40%;
+    border: solid 2px;
+    background: light;
+}
+
+hr{
+    color: blue;
+    size:100px;
+}

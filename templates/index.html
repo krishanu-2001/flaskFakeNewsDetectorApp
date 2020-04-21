@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block head %} {% endblock %}
+
+{% block body %}
+<h1>Task Master</h1>
+<br>
+
+<table>
+    <tr>
+        <th>task</th>
+        <th>description</th>
+        <th>edit</th>
+    </tr>
+    {% for task in tasks %}
+    <tr>
+        <td>{{ task.content }}</td>
+        <td>{{ task.date_created.date()  }}</td>
+        <td>
+            <a href ="/delete/{{ task.id }}">delete</a>
+            <br>
+            <a href="/update/{{ task.id }}">update</a>
+            <br>
+            <a href="/mark/{{ task.id }}">mark</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<form action="/" method="POST">
+    <input type="text" name = "content" id="content">
+    <input type = "submit" value="Add Task">
+
+</form>
+<br><hr>
+<h1>Ml Ai tester</h1>
+<br>
+<a href = "/ml">click here</a>
+
+</form>
+{% endblock %}

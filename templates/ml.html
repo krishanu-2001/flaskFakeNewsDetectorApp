@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %} {% endblock %}
+
+{% block body %}
+<h1>Ml Master</h1>
+<br>
+
+<form action="/ml" method="POST">
+<input type="text" name="txt_clf" id="txt_clf" value="{{meercat}}">
+</form>
+{% endblock %}
