@@ -24,8 +24,10 @@ it detects fake news using machine leaning.
       import random
       import numpy as np
       import pandas as pd
-      from sklearn.naive_bayes import BernoulliNB
-      from sklearn.feature_extraction.text import TfidfVectorizer
-      from sklearn.preprocessing import LabelEncoder
-      from sklearn.utils import shuffle
-      from sklearn.model_selection import train_test_split
+      import sklearn as skd
+      
+# *please use custom dataset*
+      format:
+      list of 2 strings
+      eg,
+        [["news_1",  '1'],  [ "news_2",  '0'] ]
